@@ -13,7 +13,8 @@ import java.util.List;
 public class UsuarioService {
 
     @Autowired
-    UsuarioRepository repo;
+    static UsuarioRepository repo;
+
 
     public Usuario save(Usuario to) {
         return repo.save(to);
@@ -43,7 +44,7 @@ public class UsuarioService {
 
 
     }
-    public Usuario loginUsuario(String user, String clave) {
+    public static Usuario loginUsuario(String user, String clave) {
         return repo.loginUsuario(user, clave);
     }
 

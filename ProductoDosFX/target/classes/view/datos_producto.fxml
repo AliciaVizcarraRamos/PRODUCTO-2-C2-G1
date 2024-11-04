@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edu.upeu.SistemaVentas_Proyecto.control.Datos_productoController">
+    <children>
+        <AnchorPane prefHeight="476.0" prefWidth="663.0">
+            <children>
+                <Button layoutX="458.0" layoutY="52.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="32.0" prefWidth="101.0" text="Add" />
+                <TableView fx:id="tableProducts" layoutX="26.0" layoutY="228.0" prefHeight="221.0" prefWidth="609.0">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="120.0" text="id Producto" />
+                        <TableColumn fx:id="colName" prefWidth="132.0" text="Nombre" />
+                        <TableColumn fx:id="colPrice" prefWidth="110.0" text="Precio" />
+                        <TableColumn fx:id="colStock" prefWidth="133.0" text="Stock" />
+                        <TableColumn fx:id="colState" prefWidth="106.0" text="Estado" />
+                    </columns>
+                </TableView>
+                <Label layoutX="41.0" layoutY="66.0" prefHeight="26.0" prefWidth="74.0" text="Nombres:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="41.0" layoutY="96.0" prefHeight="26.0" prefWidth="61.0" text="Precio:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="41.0" layoutY="126.0" prefHeight="26.0" prefWidth="54.0" text="Stock:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="name" layoutX="120.0" layoutY="66.0" prefHeight="25.0" prefWidth="289.0" />
+                <TextField fx:id="price" layoutX="121.0" layoutY="96.0" prefHeight="25.0" prefWidth="289.0" />
+                <TextField fx:id="stock" layoutX="120.0" layoutY="126.0" prefHeight="25.0" prefWidth="289.0" />
+                <Button layoutX="458.0" layoutY="90.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="32.0" prefWidth="101.0" text="Actualizar" />
+                <Button layoutX="458.0" layoutY="127.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="32.0" prefWidth="101.0" text="Eliminar" />
+                <Button layoutX="458.0" layoutY="166.0" mnemonicParsing="false" onAction="#cleanCellsScreen" prefHeight="32.0" prefWidth="101.0" text="CLEAN CELLS" />
+                <ComboBox fx:id="cbState" layoutX="121.0" layoutY="158.0" prefHeight="25.0" prefWidth="289.0" />
+                <Label layoutX="41.0" layoutY="158.0" prefHeight="17.0" prefWidth="54.0" text="Estado:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="200.0" layoutY="10.0" prefHeight="30.0" prefWidth="283.0" text="Gestión de productos" textFill="#300072" underline="true">
+                    <font>
+                        <Font name="Cooper Black" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -27,5 +27,7 @@ public class Usuario {
     @JoinColumn(name = "id_perfil", referencedColumnName = "id_perfil")
     @ManyToOne(optional = false)
     private Perfil idPerfil;
+
+
 }
 

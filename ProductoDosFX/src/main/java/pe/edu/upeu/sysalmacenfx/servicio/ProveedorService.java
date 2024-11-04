@@ -43,12 +43,13 @@ public class ProveedorService {
 
 
     }
-    public Proveedor update(Proveedor to){
+    public boolean update(Proveedor to){
         return  repo.save(to);
     }
     //D
-    public void delete(Long id){
+    public boolean delete(Long id){
         repo.deleteById(id);
+        return false;
     }
     public  Proveedor buscarId(Long id){
         return  repo.findById(id).get();

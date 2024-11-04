@@ -2,6 +2,8 @@ package pe.edu.upeu.sysalmacenfx.servicio;
 
 
 
+import javafx.collections.ObservableList;
+import javafx.scene.chart.PieChart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,9 @@ public class ProductoService {
     ProductoRepository repo;
     //-no :CategoriaRepository repo=new CategoriaRepository()
     Logger logger= LoggerFactory.getLogger(ProductoService.class);
+
+    public static void setPieChart(ObservableList<PieChart.Data> pieChartData) {
+    }
 
     public Producto save(Producto to) {
         return repo.save(to);

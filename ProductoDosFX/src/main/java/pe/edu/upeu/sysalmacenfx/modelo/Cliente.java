@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "upeu_cliente")
 public class Cliente {
+    public static Object State;
     @Id
     @Column(name = "dniruc", nullable = false, length = 12)
     private String dniruc;

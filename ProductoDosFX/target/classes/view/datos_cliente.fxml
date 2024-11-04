@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edu.upeu.SistemaVentas_Proyecto.control.Datos_clientesController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="474.0" prefWidth="653.0">
+            <children>
+                <Button layoutX="458.0" layoutY="52.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="32.0" prefWidth="101.0" text="ADD" />
+                <TableView fx:id="tableCustomers" layoutX="26.0" layoutY="228.0" prefHeight="221.0" prefWidth="602.0">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="120.0" text="id Cliente" />
+                        <TableColumn fx:id="colDni" prefWidth="111.0" text="DNI" />
+                        <TableColumn fx:id="colName" prefWidth="124.0" text="Nombres" />
+                        <TableColumn fx:id="colAddress" prefWidth="124.0" text="Dirección" />
+                        <TableColumn fx:id="colState" prefWidth="122.0" text="Estado" />
+                    </columns>
+                </TableView>
+                <Label layoutX="44.0" layoutY="64.0" prefHeight="17.0" prefWidth="54.0" text="DNI:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="44.0" layoutY="93.0" prefHeight="26.0" prefWidth="79.0" text="Nombres:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="44.0" layoutY="123.0" prefHeight="26.0" prefWidth="79.0" text="Dirección:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="dni" layoutX="120.0" layoutY="64.0" prefHeight="25.0" prefWidth="304.0" />
+                <TextField fx:id="name" layoutX="120.0" layoutY="93.0" prefHeight="25.0" prefWidth="304.0" />
+                <TextField fx:id="address" layoutX="121.0" layoutY="123.0" prefHeight="25.0" prefWidth="304.0" />
+                <Button layoutX="458.0" layoutY="90.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="32.0" prefWidth="101.0" text="Actualizar" />
+                <Button layoutX="458.0" layoutY="127.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="32.0" prefWidth="101.0" text="Eliminar" />
+                <Button layoutX="458.0" layoutY="166.0" mnemonicParsing="false" onAction="#cleanCellsScreen" prefHeight="32.0" prefWidth="101.0" text="CLEAN CELLS" />
+                <ComboBox fx:id="cbState" layoutX="121.0" layoutY="166.0" prefHeight="25.0" prefWidth="304.0" />
+                <Label layoutX="44.0" layoutY="166.0" prefHeight="26.0" prefWidth="60.0" text="Estado:">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="160.0" layoutY="10.0" prefHeight="30.0" prefWidth="346.0" text="GESTIÓN DEL CLIENTE" underline="true">
+                    <font>
+                        <Font name="Cooper Black" size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

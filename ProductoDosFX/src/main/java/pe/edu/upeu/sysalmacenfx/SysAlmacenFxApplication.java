@@ -5,16 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Bean;
-import pe.edu.upeu.sysalmacenfx.pruebas.serviceCAT;
-import pe.edu.upeu.sysalmacenfx.pruebas.MainX;
 
 //ALICIA VIZCARRA RAMOS-C2-G2
 @SpringBootApplication
@@ -46,7 +40,7 @@ public class SysAlmacenFxApplication extends Application {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(SysAlmacenFxApplication.class);
 		builder.application().setWebApplicationType(WebApplicationType.NONE);
 		exteconfigurableApplicationContext = builder.run(getParameters().getRaw().toArray(new String[0]));
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/inicio.fxml"));
 		fxmlLoader.setControllerFactory(exteconfigurableApplicationContext::getBean);
 		parent= fxmlLoader.load();
 

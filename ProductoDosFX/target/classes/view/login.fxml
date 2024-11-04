@@ -1,58 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="538.0" prefWidth="428.0" style="-fx-background-color: #2E354F;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.LoginController">
-   <children>
-      <AnchorPane prefHeight="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edu.upeu.SistemaVentas_Proyecto.control.MainController">
+    <children>
+      <Pane prefHeight="53.0" prefWidth="598.0" style="-fx-background-color: #000000;" />
+      <ImageView fitHeight="414.0" fitWidth="598.0" layoutY="44.0">
+         <image>
+            <Image url="@../images/img_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane focusTraversable="true" layoutY="41.0" prefHeight="420.0" prefWidth="297.0" style="-fx-background-color: #ffffff;">
          <children>
-            <Circle fill="#f20915" layoutX="34.0" layoutY="26.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#e3ff1f" layoutX="82.0" layoutY="26.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#1fff3b" layoutX="130.0" layoutY="26.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Label layoutX="244.0" layoutY="12.0" text="Login SysAlmacen" textFill="#b5abd1">
+              <TextField fx:id="user" layoutX="71.0" layoutY="198.0" prefHeight="31.0" prefWidth="162.0" />
+              <PasswordField fx:id="password" layoutX="71.0" layoutY="286.0" prefHeight="31.0" prefWidth="162.0" />
+              <Button layoutX="58.0" layoutY="350.0" mnemonicParsing="false" onAction="#signIn" prefHeight="38.0" prefWidth="189.0" style="-fx-background-color: #a67603;" text="INICIAR SESIÓN" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-               <padding>
-                  <Insets right="20.0" />
-               </padding>
-            </Label>
-         </children></AnchorPane>
-      <AnchorPane layoutX="14.0" layoutY="59.0" prefHeight="180.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
-         <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="134.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                  <Font name="Georgia Bold" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="133.0" fitWidth="133.0" layoutX="85.0">
                <image>
-                  <Image url="@../img/icons.png" />
+                  <Image url="@../images/Marca.png" />
                </image>
             </ImageView>
-         </children></AnchorPane>
-      <AnchorPane layoutX="5.0" layoutY="236.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
-         <children>
-            <AnchorPane layoutY="-3.0" style="-fx-border-color: #b5abd1; -fx-border-radius: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <opaqueInsets>
-                  <Insets bottom="10.0" left="10.0" />
-               </opaqueInsets>
-               <children>
-                  <Label layoutX="40.0" layoutY="44.0" text="Usuario:" textFill="#b5abd1" />
-                  <TextField fx:id="txtUsuario" layoutX="123.0" layoutY="40.0" prefHeight="26.0" prefWidth="246.0" />
-               </children>
-               <padding>
-                  <Insets bottom="10.0" />
-               </padding></AnchorPane>
-            <AnchorPane layoutY="67.0" style="-fx-border-color: #b5abd1; -fx-border-radius: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-               <children>
-                  <Label layoutX="47.0" layoutY="39.0" text="Clave:" textFill="#b5abd1" />
-                  <PasswordField fx:id="txtClavex" layoutX="123.0" layoutY="32.0" prefHeight="26.0" prefWidth="246.0" />
-               </children></AnchorPane>
-         </children></AnchorPane>
-      <AnchorPane layoutX="5.0" layoutY="381.0" prefHeight="87.0" prefWidth="418.0" style="-fx-background-color: yellow;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
-         <children>
-            <Button fx:id="btnIngresar" layoutY="44.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #34bb73;" text="Ingresar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-         </children></AnchorPane>
-   </children>
+            <Line endX="100.0" layoutX="151.0" layoutY="139.0" startX="-100.0" />
+              <Label alignment="CENTER" blendMode="SRC_ATOP" layoutX="101.0" layoutY="167.0" prefHeight="18.0" prefWidth="101.0" text="Usuario" textAlignment="CENTER" wrapText="true">
+                  <font>
+                      <Font name="Gill Sans MT" size="27.0" />
+                  </font>
+              </Label>
+              <Label alignment="CENTER" layoutX="86.0" layoutY="251.0" prefHeight="35.0" prefWidth="133.0" text="Password">
+                  <font>
+                      <Font name="Gill Sans MT" size="27.0" />
+                  </font>
+              </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="459.0" layoutX="290.0" layoutY="-41.0" stroke="BLACK" strokeType="INSIDE" width="16.0">
+               <effect>
+                  <Shadow radius="30.5175" width="103.07" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="440.0" layoutX="-14.0" layoutY="-14.0" stroke="BLACK" strokeType="INSIDE" width="9.0">
+               <effect>
+                  <Shadow radius="30.5175" width="103.07" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Rectangle>
+         </children></Pane>
+      <Ellipse fill="#a67603" layoutX="28.0" layoutY="21.0" radiusX="14.0" radiusY="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#a67603" layoutX="67.0" layoutY="21.0" radiusX="14.0" radiusY="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#a67603" layoutX="104.0" layoutY="21.0" radiusX="14.0" radiusY="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="313.0" layoutY="53.0" text="Tecnología" textFill="#ffefd9">
+         <font>
+            <Font name="Pristina" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="123.0" prefHeight="60.0" prefWidth="215.0" text="Zeratech" textFill="#ffefd9">
+         <font>
+            <Font name="Clarendon Blk BT Black" size="45.0" />
+         </font>
+      </Label>
+    </children>
 </AnchorPane>

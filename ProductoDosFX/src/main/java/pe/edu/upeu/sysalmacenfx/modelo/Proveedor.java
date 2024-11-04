@@ -29,4 +29,6 @@ public class Proveedor {
     private String email;
     @Column(name = "direccion", nullable = false, length = 120)
     private String direccion;
+
+    }
 }
