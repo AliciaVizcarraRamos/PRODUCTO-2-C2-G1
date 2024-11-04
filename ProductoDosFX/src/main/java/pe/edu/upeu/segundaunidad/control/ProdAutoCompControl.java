@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.control;
+package pe.edu.upeu.sysalmacenfx.control;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -7,10 +7,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.segundaunidad.componente.AutoCompleteTextField;
-import pe.edu.upeu.segundaunidad.dto.ModeloDataAutocomplet;
-import pe.edu.upeu.segundaunidad.servicio.ProductoService;
+import pe.edu.upeu.sysalmacenfx.componente.AutoCompleteTextField;
+import pe.edu.upeu.sysalmacenfx.dto.ModeloDataAutocomplet;
+import pe.edu.upeu.sysalmacenfx.servicio.ProductoService;
 
+import java.awt.*;
 import java.util.SortedSet;
 import java.util.TreeSet;
 

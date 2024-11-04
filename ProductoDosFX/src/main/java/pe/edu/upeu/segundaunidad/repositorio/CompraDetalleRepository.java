@@ -1,6 +1,6 @@
-package pe.edu.upeu.segundaunidad.repositorio;
+package pe.edu.upeu.sysalmacenfx.repositorio;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CompraDetalleRepository extends JpaRepository<pe.edu.upeu.segundaunidad.modelo.CompraDetalle,Long> {
+public interface CompraDetalleRepository extends JpaRepository<pe.edu.upeu.sysalmacenfx.modelo.CompraDetalle,Long> {
 }

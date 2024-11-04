@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.modelo;
+package pe.edu.upeu.sysalmacenfx.modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "upeu_cliente")
 public class Cliente {
-    public static Object State;
     @Id
     @Column(name = "dniruc", nullable = false, length = 12)
     private String dniruc;

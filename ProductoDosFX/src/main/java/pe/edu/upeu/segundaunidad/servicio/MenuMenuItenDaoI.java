@@ -1,6 +1,6 @@
-package pe.edu.upeu.segundaunidad.servicio;
+package pe.edu.upeu.sysalmacenfx.servicio;
 
-import pe.edu.upeu.segundaunidad.dto.MenuMenuItenTO;
+import pe.edu.upeu.sysalmacenfx.dto.MenuMenuItenTO;
 
 import java.util.List;
 import java.util.Properties;

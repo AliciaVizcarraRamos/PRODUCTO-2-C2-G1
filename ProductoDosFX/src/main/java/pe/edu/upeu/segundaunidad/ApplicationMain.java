@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad;
+package pe.edu.upeu.sysalmacenfx;
 //ALICIA VIZCARRA RAMOS
 public class  ApplicationMain {
     public static void main(String[] args) {

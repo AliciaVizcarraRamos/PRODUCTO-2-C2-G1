@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.modelo;
+package pe.edu.upeu.sysalmacenfx.modelo;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,7 +27,5 @@ public class Usuario {
     @JoinColumn(name = "id_perfil", referencedColumnName = "id_perfil")
     @ManyToOne(optional = false)
     private Perfil idPerfil;
-
-
 }
 

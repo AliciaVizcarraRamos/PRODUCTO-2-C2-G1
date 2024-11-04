@@ -1,10 +1,12 @@
-package pe.edu.upeu.segundaunidad.componente;
+package pe.edu.upeu.sysalmacenfx.componente;
 
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Dialog;
 import javafx.scene.control.DialogPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.StageStyle;
 import net.sf.jasperreports.engine.JasperPrint;
 import win.zqxu.jrviewer.JRViewerFX;
 

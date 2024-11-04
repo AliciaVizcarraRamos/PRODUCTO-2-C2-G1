@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.control;
+package pe.edu.upeu.sysalmacenfx.control;
 
 public class ClienteController {
 }

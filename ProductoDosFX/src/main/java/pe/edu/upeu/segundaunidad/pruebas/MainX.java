@@ -1,10 +1,12 @@
-package pe.edu.upeu.segundaunidad.pruebas;
+package pe.edu.upeu.sysalmacenfx.pruebas;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.segundaunidad.modelo.Categoria;
-import pe.edu.upeu.segundaunidad.repositorio.CategoriaRepository;
+import pe.edu.upeu.sysalmacenfx.SysAlmacenFxApplication;
+import pe.edu.upeu.sysalmacenfx.modelo.Categoria;
+import pe.edu.upeu.sysalmacenfx.repositorio.CategoriaRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

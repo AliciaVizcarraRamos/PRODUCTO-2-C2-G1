@@ -1,12 +1,14 @@
-package pe.edu.upeu.segundaunidad.servicio;
+package pe.edu.upeu.sysalmacenfx.servicio;
 
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.edu.upeu.segundaunidad.dto.ComboBoxOption;
-import pe.edu.upeu.segundaunidad.modelo.Marca;
-import pe.edu.upeu.segundaunidad.repositorio.MarcaRepository;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
+import pe.edu.upeu.sysalmacenfx.modelo.Categoria;
+import pe.edu.upeu.sysalmacenfx.modelo.Marca;
+import pe.edu.upeu.sysalmacenfx.repositorio.CategoriaRepository;
+import pe.edu.upeu.sysalmacenfx.repositorio.MarcaRepository;
 
 import java.util.ArrayList;
 import java.util.List;

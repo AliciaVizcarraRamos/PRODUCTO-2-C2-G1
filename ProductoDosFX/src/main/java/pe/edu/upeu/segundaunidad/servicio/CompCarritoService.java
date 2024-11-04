@@ -1,9 +1,10 @@
-package pe.edu.upeu.segundaunidad.servicio;
+package pe.edu.upeu.sysalmacenfx.servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import pe.edu.upeu.segundaunidad.dto.ComboBoxOption;
-import pe.edu.upeu.segundaunidad.modelo.CompCarrito;
-import pe.edu.upeu.segundaunidad.repositorio.CompCarritoRepository;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
+import pe.edu.upeu.sysalmacenfx.modelo.CompCarrito;
+import pe.edu.upeu.sysalmacenfx.repositorio.CategoriaRepository;
+import pe.edu.upeu.sysalmacenfx.repositorio.CompCarritoRepository;
 
 import java.util.ArrayList;
 import java.util.List;

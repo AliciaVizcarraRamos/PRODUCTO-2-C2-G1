@@ -1,10 +1,10 @@
-package pe.edu.upeu.segundaunidad.servicio;
+package pe.edu.upeu.sysalmacenfx.servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.edu.upeu.segundaunidad.dto.ComboBoxOption;
-import pe.edu.upeu.segundaunidad.modelo.Proveedor;
-import pe.edu.upeu.segundaunidad.repositorio.ProveedorRepository;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
+import pe.edu.upeu.sysalmacenfx.modelo.Proveedor;
+import pe.edu.upeu.sysalmacenfx.repositorio.ProveedorRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,13 +43,12 @@ public class ProveedorService {
 
 
     }
-    public boolean update(Proveedor to){
+    public Proveedor update(Proveedor to){
         return  repo.save(to);
     }
     //D
-    public boolean delete(Long id){
+    public void delete(Long id){
         repo.deleteById(id);
-        return false;
     }
     public  Proveedor buscarId(Long id){
         return  repo.findById(id).get();

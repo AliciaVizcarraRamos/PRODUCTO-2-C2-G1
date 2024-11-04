@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.modelo;
+package pe.edu.upeu.sysalmacenfx.modelo;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;

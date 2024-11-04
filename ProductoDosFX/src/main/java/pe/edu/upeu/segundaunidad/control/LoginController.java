@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.control;
+package pe.edu.upeu.sysalmacenfx.control;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,11 +16,11 @@ import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.segundaunidad.componente.StageManager;
-import pe.edu.upeu.segundaunidad.componente.Toast;
-import pe.edu.upeu.segundaunidad.dto.SessionManager;
-import pe.edu.upeu.segundaunidad.modelo.Usuario;
-import pe.edu.upeu.segundaunidad.servicio.UsuarioService;
+import pe.edu.upeu.sysalmacenfx.componente.StageManager;
+import pe.edu.upeu.sysalmacenfx.componente.Toast;
+import pe.edu.upeu.sysalmacenfx.dto.SessionManager;
+import pe.edu.upeu.sysalmacenfx.modelo.Usuario;
+import pe.edu.upeu.sysalmacenfx.servicio.UsuarioService;
 
 
 import java.io.IOException;

@@ -1,16 +1,18 @@
-package pe.edu.upeu.segundaunidad.servicio;
+package pe.edu.upeu.sysalmacenfx.servicio;
 
 
 
-import javafx.collections.ObservableList;
-import javafx.scene.chart.PieChart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.edu.upeu.segundaunidad.dto.ModeloDataAutocomplet;
-import pe.edu.upeu.segundaunidad.modelo.Producto;
-import pe.edu.upeu.segundaunidad.repositorio.ProductoRepository;
+import pe.edu.upeu.sysalmacenfx.dto.ModeloDataAutocomplet;
+import pe.edu.upeu.sysalmacenfx.modelo.Categoria;
+import pe.edu.upeu.sysalmacenfx.modelo.Marca;
+import pe.edu.upeu.sysalmacenfx.modelo.Producto;
+import pe.edu.upeu.sysalmacenfx.repositorio.CategoriaRepository;
+import pe.edu.upeu.sysalmacenfx.repositorio.MarcaRepository;
+import pe.edu.upeu.sysalmacenfx.repositorio.ProductoRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +24,6 @@ public class ProductoService {
     ProductoRepository repo;
     //-no :CategoriaRepository repo=new CategoriaRepository()
     Logger logger= LoggerFactory.getLogger(ProductoService.class);
-
-    public static void setPieChart(ObservableList<PieChart.Data> pieChartData) {
-    }
 
     public Producto save(Producto to) {
         return repo.save(to);

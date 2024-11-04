@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.modelo;
+package pe.edu.upeu.sysalmacenfx.modelo;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -29,6 +29,4 @@ public class Proveedor {
     private String email;
     @Column(name = "direccion", nullable = false, length = 120)
     private String direccion;
-
-    }
 }

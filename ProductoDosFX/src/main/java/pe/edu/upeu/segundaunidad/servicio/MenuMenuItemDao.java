@@ -1,7 +1,7 @@
-package pe.edu.upeu.segundaunidad.servicio;
+package pe.edu.upeu.sysalmacenfx.servicio;
 
 import org.springframework.stereotype.Service;
-import pe.edu.upeu.segundaunidad.dto.MenuMenuItenTO;
+import pe.edu.upeu.sysalmacenfx.dto.MenuMenuItenTO;
 
 import java.util.ArrayList;
 import java.util.List;

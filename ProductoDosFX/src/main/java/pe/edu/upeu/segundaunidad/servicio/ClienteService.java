@@ -1,10 +1,12 @@
-package pe.edu.upeu.segundaunidad.servicio;
+package pe.edu.upeu.sysalmacenfx.servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.edu.upeu.segundaunidad.dto.ComboBoxOption;
-import pe.edu.upeu.segundaunidad.modelo.Cliente;
-import pe.edu.upeu.segundaunidad.repositorio.ClienteRepository;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
+import pe.edu.upeu.sysalmacenfx.modelo.Categoria;
+import pe.edu.upeu.sysalmacenfx.modelo.Cliente;
+import pe.edu.upeu.sysalmacenfx.repositorio.CategoriaRepository;
+import pe.edu.upeu.sysalmacenfx.repositorio.ClienteRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,18 +45,17 @@ public class ClienteService {
 
 
     }
-    public boolean update(Cliente to){
+    public Cliente update(Cliente to){
         return  repo.save(to);
     }
     //D
-    public boolean delete(Long id){
+    public void delete(Long id){
         repo.deleteById(id);
-        return (false);
     }
     public  Cliente buscarId(Long id){
         return  repo.findById(id).get();
     }
-    public boolean listarCombobox(){
+    public List<ComboBoxOption> listarCombobox(){
         List<ComboBoxOption> listar =new ArrayList<>();
         for (Cliente cate : repo.findAll()) {
             listar.add(new ComboBoxOption(String
@@ -67,6 +68,5 @@ public class ClienteService {
                 ;
 
     }
-
 }
 

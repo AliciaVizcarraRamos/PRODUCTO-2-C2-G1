@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.componente;
+package pe.edu.upeu.sysalmacenfx.componente;
 
 
 import java.awt.image.BufferedImage;

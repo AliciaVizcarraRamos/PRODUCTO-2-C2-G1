@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.control;
+package pe.edu.upeu.sysalmacenfx.control;
 
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
@@ -15,15 +15,16 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.segundaunidad.componente.ColumnInfo;
-import pe.edu.upeu.segundaunidad.componente.ComboBoxAutoComplete;
-import pe.edu.upeu.segundaunidad.componente.TableViewHelper;
-import pe.edu.upeu.segundaunidad.dto.ComboBoxOption;
-import pe.edu.upeu.segundaunidad.modelo.Producto;
-import pe.edu.upeu.segundaunidad.servicio.CategoriaService;
-import pe.edu.upeu.segundaunidad.servicio.MarcaService;
-import pe.edu.upeu.segundaunidad.servicio.ProductoService;
-import pe.edu.upeu.segundaunidad.servicio.UnidadMedidaService;
+import pe.edu.upeu.sysalmacenfx.componente.ColumnInfo;
+import pe.edu.upeu.sysalmacenfx.componente.ComboBoxAutoComplete;
+import pe.edu.upeu.sysalmacenfx.componente.TableViewHelper;
+import pe.edu.upeu.sysalmacenfx.componente.Toast;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
+import pe.edu.upeu.sysalmacenfx.modelo.Producto;
+import pe.edu.upeu.sysalmacenfx.servicio.CategoriaService;
+import pe.edu.upeu.sysalmacenfx.servicio.MarcaService;
+import pe.edu.upeu.sysalmacenfx.servicio.ProductoService;
+import pe.edu.upeu.sysalmacenfx.servicio.UnidadMedidaService;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -32,7 +33,7 @@ import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import static pe.edu.upeu.segundaunidad.componente.Toast.showToast;
+import static pe.edu.upeu.sysalmacenfx.componente.Toast.showToast;
 
 @Component
 public class ProductoController {

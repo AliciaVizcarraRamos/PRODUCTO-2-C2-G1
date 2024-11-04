@@ -1,20 +1,23 @@
-package pe.edu.upeu.segundaunidad.control;
+package pe.edu.upeu.sysalmacenfx.control;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.segundaunidad.dto.MenuMenuItenTO;
-import pe.edu.upeu.segundaunidad.servicio.MenuMenuItemDao;
-import pe.edu.upeu.segundaunidad.servicio.MenuMenuItenDaoI;
-import pe.edu.upeu.segundaunidad.utils.UtilsX;
+import pe.edu.upeu.sysalmacenfx.dto.MenuMenuItenTO;
+import pe.edu.upeu.sysalmacenfx.dto.SessionManager;
+import pe.edu.upeu.sysalmacenfx.servicio.MenuMenuItemDao;
+import pe.edu.upeu.sysalmacenfx.servicio.MenuMenuItenDaoI;
+import pe.edu.upeu.sysalmacenfx.utils.UtilsX;
 
 import java.io.IOException;
 import java.util.List;
@@ -150,7 +153,7 @@ public class GUIMainFX {
                 tabPaneFx.getTabs().clear();
 
                 try {
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/inicio.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
                     fxmlLoader.setControllerFactory(context::getBean);
                     parent= fxmlLoader.load();
                     Scene scene = new Scene(parent); //Punto (1) Diana

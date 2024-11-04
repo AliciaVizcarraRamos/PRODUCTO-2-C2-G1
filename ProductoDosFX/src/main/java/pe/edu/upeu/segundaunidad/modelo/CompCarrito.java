@@ -1,4 +1,4 @@
-package pe.edu.upeu.segundaunidad.modelo;
+package pe.edu.upeu.sysalmacenfx.modelo;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -37,6 +37,4 @@ public class CompCarrito {
     @ManyToOne
     @JoinColumn(name = "id_usuario",  nullable = false)
     private Usuario usuario;
-
-
 }
