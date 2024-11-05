@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.productodosfx.control.ProductoController">
+<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.ProductoController">
    <children>
       <VBox layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308">
          <children>
@@ -19,7 +19,6 @@
                   <Label layoutX="274.0" layoutY="91.0" text="Filtrar Registro:" />
                   <TextField fx:id="txtFiltroDato" layoutX="274.0" layoutY="109.0" />
                   <Button layoutX="435.0" layoutY="109.0" mnemonicParsing="false" text="Button" />
-                  <Button layoutX="621.0" layoutY="14.0" mnemonicParsing="false" text="Button" />
                </children>
                <VBox.margin>
                   <Insets />

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pe.edu.upeu</groupId>
-	<artifactId>ProductoDosFX</artifactId>
+	<artifactId>SysAlmacenFX</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SysAlmacenFX</name>
 	<description>Demo project for Spring Boot</description>
@@ -155,7 +155,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>pe.edu.upeu.productodosfx.ApplicationMain</mainClass>
+							<mainClass>pe.edu.upeu.sysalmacenfx.ApplicationMain</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
